@@ -129,44 +129,18 @@
         Take two minutes to be encouraged. A short word on living out Christ’s love.
       </div>
 
-      <!-- Video Thumbnail (click to watch) -->
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:12px auto 0 auto;max-width:560px;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
-        <tr>
-          <td align="center" style="padding:6px;">
-            <a href="https://youtube.com/shorts/k_O3vftgMRs?feature=share" target="_blank" style="text-decoration:none;">
-              <img src="https://mcusercontent.com/4c57091bf25d401d85fe2b8ef/images/103c1a59-63db-c04d-51c0-a95bd25ee459.jpg" width="560" alt="Watch: A Moment of Encouragement with the Love Pastor" style="display:block;border:0;width:100%;max-width:560px;height:auto;margin:0;" class="fluid">
-            </a>
-          </td>
-        </tr>
-      </table>
-
-      <!-- Bulletproof CTA Button -->
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:10px auto 0 auto;">
-        <tr><td align="center">
-          <!--[if mso]>
-          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"
-            href="https://youtube.com/shorts/k_O3vftgMRs?feature=share"
-            style="height:36px;v-text-anchor:middle;width:200px;" arcsize="10%"
-            strokecolor="#d32f2f" fillcolor="#ffffff">
-            <w:anchorlock/>
-            <center style="color:#d32f2f;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.3px;">
-              WATCH THE VIDEO
-            </center>
-          </v:roundrect>
-          <![endif]-->
-          <!--[if !mso]><!-- -->
-          <a href="https://youtube.com/shorts/k_O3vftgMRs?feature=share" target="_blank" style="background:#ffffff;border:1px solid #d32f2f;border-radius:6px;color:#d32f2f;display:inline-block;
-                    font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:36px;text-align:center;
-                    text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;letter-spacing:.3px;">
-            WATCH THE VIDEO
-          </a>
-          <!--<![endif]-->
-        </td></tr>
-      </table>
-
-      <!-- Spacer (do NOT add a border-top on the next section) -->
-      <div style="height:12px;line-height:12px;font-size:0;mso-line-height-rule:exactly;">&nbsp;</div>
-
+<!-- Love Pastor – Autoplay Video -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px auto 0 auto;max-width:560px;">
+  <tr>
+    <td align="center" style="padding:6px;">
+      <div style="position:relative;width:100%;max-width:390px;aspect-ratio:9/16;">
+        <iframe
+          src="https://www.youtube.com/embed/k_O3vftgMRs?autoplay=1&mute=1&playsinline=1&loop=1&playlist=k_O3vftgMRs&controls=0&modestbranding=1&rel=0"
+          style="width:100%;height:100%;border:0;"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>
     </td>
   </tr>
 </table>
