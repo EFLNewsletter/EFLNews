@@ -135,7 +135,7 @@
         Take two minutes to be encouraged. A short word on living out Christ’s love.
       </div>
 
-    <!-- Love Pastor – Autoplay (Muted) with Click-to-Unmute -->
+<!-- Love Pastor – Autoplay with Click-to-Toggle Sound -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
   <tr>
     <td align="center" style="padding:12px 0;">
@@ -156,9 +156,10 @@
                 allowfullscreen>
               </iframe>
 
-              <!-- Tap to unmute overlay -->
+              <!-- Toggle sound button -->
               <button
-                onclick="unmuteLovePastor()"
+                id="toggleSoundBtn"
+                onclick="toggleLovePastorSound()"
                 style="
                   position:absolute;
                   bottom:14px;
@@ -168,12 +169,12 @@
                   color:#ffffff;
                   border:0;
                   border-radius:20px;
-                  padding:8px 14px;
+                  padding:8px 16px;
                   font-family:Arial,Helvetica,sans-serif;
                   font-size:13px;
                   cursor:pointer;
                 ">
-                🔊 Tap to unmute
+                🔇 Sound off
               </button>
 
             </div>
@@ -187,15 +188,29 @@
 </table>
 
 <script>
-  function unmuteLovePastor() {
+  let isMuted = true;
+
+  function toggleLovePastorSound() {
     const iframe = document.getElementById('lovePastorVideo');
-    iframe.contentWindow.postMessage(
-      '{"event":"command","func":"unMute","args":""}',
-      '*'
-    );
+    const button = document.getElementById('toggleSoundBtn');
+
+    if (isMuted) {
+      iframe.contentWindow.postMessage(
+        '{"event":"command","func":"unMute","args":""}',
+        '*'
+      );
+      button.textContent = '🔊 Sound on';
+    } else {
+      iframe.contentWindow.postMessage(
+        '{"event":"command","func":"mute","args":""}',
+        '*'
+      );
+      button.textContent = '🔇 Sound off';
+    }
+
+    isMuted = !isMuted;
   }
 </script>
-
 
 <!-- RE-OPEN red rail wrapper for the remaining featured items (so the rail doesn’t become massive) -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
