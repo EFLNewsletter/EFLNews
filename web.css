@@ -103,19 +103,26 @@
       FEATURED NEWS AND UPDATES
     </h2>
 
-<!-- EFL HIGHLIGHTS — Single red rail wrapper (prevents gray gaps) -->
+<!-- EFL HIGHLIGHTS — Single red rail wrapper (FIXED: rail stays ONLY for the items you put inside it) -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
   <tr>
-    <!-- Continuous red rail -->
+    <!-- Red rail -->
     <td width="6" bgcolor="#d32f2f" style="line-height:0;font-size:0;">&nbsp;</td>
 
-    <!-- Right content column: stack items inside this one cell -->
+    <!-- Right content column -->
     <td style="padding:0;">
 
-<!-- FEATURED: A Moment of Encouragement (top gray only, no red rail) -->
+      <!-- Put ANY short items that should have the rail INSIDE this wrapper.
+           If you have none above Love Pastor, keep this spacer row only. -->
+      <div style="height:0;line-height:0;font-size:0;mso-line-height-rule:exactly;">&nbsp;</div>
+
+    </td>
+  </tr>
+</table>
+
+<!-- FEATURED: A Moment of Encouragement (NO red rail around this tall block) -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;">
   <tr>
-    <!-- Keep ALL content inside this one TD so the rail stays intact -->
     <td align="center" style="padding:14px 14px 12px 12px;text-align:center;border-top:1px solid #000000;">
 
       <!-- Heading -->
@@ -124,42 +131,31 @@
       </div>
 
       <!-- Subcopy -->
-      <div style="max-width:520px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;
-                  font-size:14px;color:#4a4a4a;line-height:1.6;">
+      <div style="max-width:520px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;">
         Take two minutes to be encouraged. A short word on living out Christ’s love.
       </div>
 
-<!-- Love Pastor – Autoplay Video (Rail-Safe) -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-  <tr>
-    <td align="center" style="padding:12px 0;overflow:hidden;">
-
-      <!-- Inner constraint to protect left rail -->
-      <table role="presentation" width="390" cellpadding="0" cellspacing="0" border="0" style="max-width:390px;width:100%;border-collapse:collapse;">
+      <!-- Love Pastor – Autoplay Video -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
-          <td style="padding:0;">
+          <td align="center" style="padding:12px 0;">
 
-            <div style="
-              position:relative;
-              width:100%;
-              padding-top:177.78%; /* 9:16 aspect ratio */
-              overflow:hidden;
-              border-radius:6px;
-            ">
-              <iframe
-                src="https://www.youtube.com/embed/k_O3vftgMRs?autoplay=1&mute=1&playsinline=1&loop=1&playlist=k_O3vftgMRs&controls=0&modestbranding=1&rel=0"
-                style="
-                  position:absolute;
-                  top:0;
-                  left:0;
-                  width:100%;
-                  height:100%;
-                  border:0;
-                "
-                allow="autoplay; encrypted-media"
-                allowfullscreen>
-              </iframe>
-            </div>
+            <table role="presentation" width="390" cellpadding="0" cellspacing="0" border="0" style="max-width:390px;width:100%;border-collapse:collapse;">
+              <tr>
+                <td style="padding:0;">
+
+                  <div style="position:relative;width:100%;padding-top:177.78%;overflow:hidden;border-radius:6px;">
+                    <iframe
+                      src="https://www.youtube.com/embed/k_O3vftgMRs?autoplay=1&mute=1&playsinline=1&loop=1&playlist=k_O3vftgMRs&controls=0&modestbranding=1&rel=0"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+                      allow="autoplay; encrypted-media"
+                      allowfullscreen>
+                    </iframe>
+                  </div>
+
+                </td>
+              </tr>
+            </table>
 
           </td>
         </tr>
@@ -169,65 +165,72 @@
   </tr>
 </table>
 
-
-
-<!-- FEATURED NEWS: Important News & Updates (no photos) -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;">
+<!-- RE-OPEN red rail wrapper for the remaining featured items (so the rail doesn’t become massive) -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
   <tr>
-    <td style="padding:14px 14px 16px 12px;background:#ffffff;">
+    <td width="6" bgcolor="#d32f2f" style="line-height:0;font-size:0;">&nbsp;</td>
+    <td style="padding:0;">
 
-      <!-- Black divider ABOVE header -->
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;margin:0 auto;border-collapse:collapse;">
+      <!-- FEATURED NEWS: Important News & Updates (no photos) -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;">
         <tr>
-          <td style="border-top:1px solid #000000;height:0;line-height:0;font-size:0;">&nbsp;</td>
+          <td style="padding:14px 14px 16px 12px;background:#ffffff;">
+
+            <!-- Black divider ABOVE header -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;margin:0 auto;border-collapse:collapse;">
+              <tr>
+                <td style="border-top:1px solid #000000;height:0;line-height:0;font-size:0;">&nbsp;</td>
+              </tr>
+            </table>
+
+            <div style="height:10px;line-height:10px;font-size:0;">&nbsp;</div>
+
+            <!-- Header -->
+            <div style="font-family:Georgia,serif;font-size:16px;color:#2a2a2a;font-weight:bold;margin:0 0 8px;text-align:center;">
+              Important News &amp; Updates
+            </div>
+
+            <!-- Update content -->
+            <div style="max-width:520px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;text-align:left;">
+
+              <p style="margin:0 0 10px 0;">
+                We are grateful for all that God continues to do through the EFL community. Below are a few
+                important updates and reminders as we move into the year ahead.
+              </p>
+
+              <ul style="padding-left:18px;margin:0;">
+                <li style="margin-bottom:8px;">
+                  <strong>2026 Focus:</strong> As a fellowship, our focus for the year is on
+                  <strong>Faith, Fitness, Family, Finance, Fellowship, and Fasting</strong>—seeking growth in each area
+                  while encouraging and supporting one another in Christ.
+                </li>
+
+                <li style="margin-bottom:8px;">
+                  <strong>Prayer &amp; Condolences:</strong> Please keep the families of Clay Aikins, whose
+                  ex-wife has passed away, and Todd Petersen, whose mother-in-law has passed away, in your
+                  prayers. We lift these families up to the Lord during this time of mourning, asking for
+                  comfort, peace, and strength.
+                </li>
+
+                <li style="margin-bottom:8px;">
+                  <strong>EFL Retreat (April 10–12, 2026):</strong> Join us for a powerful weekend of fellowship, worship, and spiritual growth at the EFL Retreat, including two nights of lodging, all meals, and meaningful teaching and testimony. Scholarships are available for those in need, and opportunities to sponsor another brother are also offered.
+                </li>
+
+                <li style="margin-bottom:8px;">
+                  <strong>Next Movie Night (01/15/26):</strong> Join us for a Movie Night next Thursday for a relaxed evening of fellowship and connection with EFL brothers watching the movie: Courageous or Facing Giants.
+                </li>
+
+                <li style="margin-bottom:0;">
+                  <strong>Next Family Night (01/31/26):</strong> Mark your calendar—we’re looking forward to gathering
+                  together as families in Christ.
+                </li>
+              </ul>
+
+            </div>
+
+          </td>
         </tr>
       </table>
-
-      <div style="height:10px;line-height:10px;font-size:0;">&nbsp;</div>
-
-      <!-- Header -->
-      <div style="font-family:Georgia,serif;font-size:16px;color:#2a2a2a;font-weight:bold;margin:0 0 8px;text-align:center;">
-        Important News &amp; Updates
-      </div>
-
-      <!-- Update content -->
-      <div style="max-width:520px;margin:0 auto;
-                  font-family:Arial,Helvetica,sans-serif;
-                  font-size:14px;color:#4a4a4a;line-height:1.6;text-align:left;">
-
-        <p style="margin:0 0 10px 0;">
-          We are grateful for all that God continues to do through the EFL community. Below are a few
-          important updates and reminders as we move into the year ahead.
-        </p>
-
-        <ul style="padding-left:18px;margin:0;">
-          <li style="margin-bottom:8px;">
-            <strong>2026 Focus:</strong> As a fellowship, our focus for the year is on
-            <strong>Faith, Fitness, Family, Finance, Fellowship, and Fasting</strong>—seeking growth in each area
-            while encouraging and supporting one another in Christ.
-          </li>
-
-          <li style="margin-bottom:8px;">
-            <strong>Prayer &amp; Condolences:</strong> Please keep the families of Clay Aikins, whose
-            ex-wife has passed away, and Todd Petersen, whose mother-in-law has passed away, in your
-            prayers. We lift these families up to the Lord during this time of mourning, asking for
-            comfort, peace, and strength.
-          </li>
-
-          <!-- NEW: Upcoming items listed below Prayer & Condolences -->
-          <li style="margin-bottom:8px;">
-            <strong>EFL Retreat (April 10–12, 2026):</strong> Join us for a powerful weekend of fellowship, worship, and spiritual growth at the EFL Retreat, including two nights of lodging, all meals, and meaningful teaching and testimony. Scholarships are available for those in need, and opportunities to sponsor another brother are also offered.
-          </li>
-          <li style="margin-bottom:8px;">
-            <strong>Next Movie Night (01/15/26):</strong> Join us for a Movie Night next Thursday for a relaxed evening of fellowship and connection with EFL brothers watching the movie: Courageous or Facing Giants.
-          </li>
-          <li style="margin-bottom:0;">
-            <strong>Next Family Night (01/31/26):</strong> Mark your calendar—we’re looking forward to gathering
-            together as families in Christ.
-          </li>
-        </ul>
-
-      </div>
 
       <!-- Closing line -->
       <div style="max-width:520px;margin:12px auto 0 auto;
