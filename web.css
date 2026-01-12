@@ -29,7 +29,8 @@
         <td align="center" style="padding:20px;">
           <!-- Outer container -->
           <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="container" style="width:600px;max-width:600px;background:#ffffff;border:1px solid #c0c0c0;">
-  
+             <!-- Outer container -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="container" style="width:600px;max-width:600px;background:#ffffff;border:1px solid #c0c0c0;">
 
           <!-- TOP RIGHT DATE -->
 <tr>
@@ -96,34 +97,25 @@
 
 <!-- EFL HIGHLIGHTS (centered; no boxes) -->
 </td></tr><tr>
-<td style="padding:22px;background:#ffffff;border-bottom:3.5px solid #e0e0e0;">
+  <td style="padding:22px;background:#ffffff;border-bottom:3.5px solid #e0e0e0;">
+    <h2 style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:20px;color:#2a2a2a;text-align:center;">   
+      FEATURED NEWS AND UPDATES
+    </h2>
 
-  <h2 style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:20px;color:#2a2a2a;text-align:center;">
-    FEATURED NEWS AND UPDATES
-  </h2>
-
-  <!-- EFL HIGHLIGHTS — Single red rail wrapper -->
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-         style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
-
-    <!-- Divider spanning rail + content -->
-    <tr>
-      <td colspan="2" style="border-top:1px solid #000000;font-size:0;line-height:0;">&nbsp;</td>
-    </tr>
-
-    <!-- Rail + content -->
-    <tr>
-      <!-- Red rail -->
-      <td width="6" bgcolor="#d32f2f" style="font-size:0;line-height:0;">&nbsp;</td>
-
-      <!-- Content column -->
-      <td style="padding:0;">
-
-   <!-- FEATURED: A Moment of Encouragement (content lives INSIDE rail column) -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-       style="border-collapse:collapse;">
+<!-- EFL HIGHLIGHTS — Single red rail wrapper (prevents gray gaps) -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
   <tr>
-    <td align="center" style="padding:14px 14px 12px 12px;text-align:center;">
+    <!-- Continuous red rail -->
+    <td width="6" bgcolor="#d32f2f" style="line-height:0;font-size:0;">&nbsp;</td>
+
+    <!-- Right content column: stack items inside this one cell -->
+    <td style="padding:0;">
+
+<!-- FEATURED: A Moment of Encouragement (top gray only, no red rail) -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;">
+  <tr>
+    <!-- Keep ALL content inside this one TD so the rail stays intact -->
+    <td align="center" style="padding:14px 14px 12px 12px;text-align:center;border-top:1px solid #000000;">
 
       <!-- Heading -->
       <div style="font-family:Georgia,serif;font-size:16px;color:#2a2a2a;font-weight:bold;margin:0 0 6px;">
@@ -131,132 +123,99 @@
       </div>
 
       <!-- Subcopy -->
-      <div style="max-width:520px;margin:0 auto;
-                  font-family:Arial,Helvetica,sans-serif;
+      <div style="max-width:520px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;
                   font-size:14px;color:#4a4a4a;line-height:1.6;">
         Take two minutes to be encouraged. A short word on living out Christ’s love.
       </div>
 
-      <!-- Spacer -->
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr><td height="12" style="font-size:0;line-height:0;">&nbsp;</td></tr>
-      </table>
-
-      <!-- Love Pastor Video -->
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <!-- Video Thumbnail (click to watch) -->
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:12px auto 0 auto;max-width:560px;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
         <tr>
-          <td align="center">
-
-            <table role="presentation" width="390" cellpadding="0" cellspacing="0" border="0"
-                   style="max-width:390px;width:100%;border-collapse:collapse;">
-              <tr>
-                <td style="padding:0;">
-
-                  <div style="position:relative;width:100%;padding-top:177.78%;
-                              overflow:hidden;border-radius:6px;">
-
-                    <iframe
-                      id="lovePastorVideo"
-                      src="https://www.youtube.com/embed/2mBqtL0nrHQ?autoplay=1&mute=1&playsinline=1&loop=1&playlist=2mBqtL0nrHQ&controls=0&modestbranding=1&rel=0"
-                      style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-                      allow="autoplay; encrypted-media"
-                      allowfullscreen>
-                    </iframe>
-
-                    <!-- Toggle sound button -->
-                    <button
-                      id="toggleSoundBtn"
-                      onclick="toggleLovePastorSound()"
-                      style="position:absolute;
-                             bottom:14px;
-                             left:50%;
-                             transform:translateX(-50%);
-                             background:rgba(0,0,0,0.7);
-                             color:#ffffff;
-                             border:0;
-                             border-radius:20px;
-                             padding:8px 16px;
-                             font-family:Arial,Helvetica,sans-serif;
-                             font-size:13px;
-                             cursor:pointer;">
-                      🔇 Sound off
-                    </button>
-
-                  </div>
-
-                </td>
-              </tr>
-            </table>
-
+          <td align="center" style="padding:6px;">
+            <a href="https://youtube.com/shorts/2mBqtL0nrHQ?feature=share" target="_blank" style="text-decoration:none;">
+              <img src="https://mcusercontent.com/4c57091bf25d401d85fe2b8ef/images/9f4da296-7090-14ab-36be-88c3684f2d13.jpg" width="560" alt="Watch: A Moment of Encouragement with the Love Pastor" style="display:block;border:0;width:100%;max-width:560px;height:auto;margin:0;" class="fluid">
+            </a>
           </td>
         </tr>
       </table>
 
-      <!-- Bottom spacer to visually end rail section -->
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr><td height="14" style="font-size:0;line-height:0;">&nbsp;</td></tr>
+      <!-- Bulletproof CTA Button -->
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:10px auto 0 auto;">
+        <tr><td align="center">
+          <!--[if mso]>
+          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"
+            href="https://youtube.com/shorts/2mBqtL0nrHQ?feature=share"
+            style="height:36px;v-text-anchor:middle;width:200px;" arcsize="10%"
+            strokecolor="#d32f2f" fillcolor="#ffffff">
+            <w:anchorlock/>
+            <center style="color:#d32f2f;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.3px;">
+              WATCH THE VIDEO
+            </center>
+          </v:roundrect>
+          <![endif]-->
+          <!--[if !mso]><!-- -->
+          <a href="https://youtube.com/shorts/2mBqtL0nrHQ?feature=share" target="_blank" style="background:#ffffff;border:1px solid #d32f2f;border-radius:6px;color:#d32f2f;display:inline-block;
+                    font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:36px;text-align:center;
+                    text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;letter-spacing:.3px;">
+            WATCH THE VIDEO
+          </a>
+          <!--<![endif]-->
+        </td></tr>
       </table>
+
+      <!-- Spacer (do NOT add a border-top on the next section) -->
+      <div style="height:12px;line-height:12px;font-size:0;mso-line-height-rule:exactly;">&nbsp;</div>
 
     </td>
   </tr>
 </table>
 
+<!-- FEATURED: Story of Impact (Mike Vargas / Rob Invite) -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;background:#ffffff;">
+  <tr>
+    <td style="padding:14px 14px 16px 12px;background:#ffffff;">
 
-        <!-- Spacer between sections -->
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr><td height="14" style="font-size:0;line-height:0;">&nbsp;</td></tr>
-        </table>
+      <!-- Black divider ABOVE header -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;margin:0 auto;border-collapse:collapse;">
+        <tr>
+          <td style="border-top:1px solid #000000;height:0;line-height:0;font-size:0;">&nbsp;</td>
+        </tr>
+      </table>
 
-        <!-- FEATURED: Story of Impact -->
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-               style="border-collapse:collapse;background:#ffffff;">
-          <tr>
-            <td style="padding:14px 14px 16px 12px;">
+      <!-- Spacer -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr>
+          <td height="10" style="font-size:0;line-height:0;">&nbsp;</td>
+        </tr>
+      </table>
 
-              <!-- Divider -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr>
-                  <td style="border-top:1px solid #000000;font-size:0;line-height:0;">&nbsp;</td>
-                </tr>
-              </table>
+      <!-- Header -->
+      <div style="font-family:Georgia,serif;font-size:16px;color:#2a2a2a;font-weight:bold;margin:0 0 10px;text-align:center;">
+        A Story of the Impact of EFL
+      </div>
 
-              <!-- Spacer -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr><td height="10" style="font-size:0;line-height:0;">&nbsp;</td></tr>
-              </table>
+      <!-- Body -->
+      <div style="max-width:520px;margin:0 auto;
+                  font-family:Arial,Helvetica,sans-serif;
+                  font-size:14px;color:#4a4a4a;line-height:1.7;text-align:left;">
 
-              <div style="font-family:Georgia,serif;font-size:16px;color:#2a2a2a;
-                          font-weight:bold;margin:0 0 10px;text-align:center;">
-                A Story of the Impact of EFL
-              </div>
+        <p style="margin:0 0 10px 0;">
+          We recently received a heartfelt message from the son of <strong>Mike Vargas</strong>, thanking <strong>Rob</strong> for
+          inviting his father to Equipped for Life. He shared how being part of EFL has made a visible difference in his dad’s
+          life—strengthening his faith, renewing his sense of purpose, and surrounding him with meaningful brotherhood.
+        </p>
 
-              <div style="max-width:520px;margin:0 auto;
-                          font-family:Arial,Helvetica,sans-serif;
-                          font-size:14px;color:#4a4a4a;line-height:1.7;text-align:left;">
+        <p style="margin:0;">
+          Stories like this remind us that when one man grows in his walk with Christ, the impact extends beyond the ministry and
+          into his home. We are grateful for Rob’s willingness to invite, for Mike’s commitment to engage, and for the continued
+          work God is doing through EFL to bring lasting change to men and their families.
+        </p>
 
-                <p style="margin:0 0 10px 0;">
-                  We recently received a heartfelt message from the son of <strong>Mike Vargas</strong>,
-                  thanking <strong>Rob</strong> for inviting his father to Equipped for Life. He shared how
-                  being part of EFL has made a visible difference in his dad’s life—strengthening his faith,
-                  renewing his sense of purpose, and surrounding him with meaningful brotherhood.
-                </p>
+      </div>
 
-                <p style="margin:0;">
-                  Stories like this remind us that when one man grows in his walk with Christ, the impact
-                  extends beyond the ministry and into his home. We are grateful for Rob’s willingness to
-                  invite, for Mike’s commitment to engage, and for the continued work God is doing through
-                  EFL to bring lasting change to men and their families.
-                </p>
-
-              </div>
-
-            </td>
-          </tr>
-        </table>
-
-      </td>
-    </tr>
-  </table>
+    </td>
+  </tr>
+</table>
 
 <!-- FEATURED NEWS: Important News & Updates (no photos) -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;">
