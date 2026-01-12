@@ -120,65 +120,97 @@
       <!-- Content column -->
       <td style="padding:0;">
 
-        <!-- FEATURED: Moment of Encouragement -->
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-               style="border-collapse:collapse;">
-          <tr>
-            <td align="center" style="padding:14px 14px 12px 12px;text-align:center;">
+   <!-- FEATURED: A Moment of Encouragement (NO red rail around this tall block) -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;">
+  <tr>
+    <td align="center" style="padding:14px 14px 12px 12px;text-align:center;border-top:1px solid #000000;">
 
-              <div style="font-family:Georgia,serif;font-size:16px;color:#2a2a2a;font-weight:bold;margin:0 0 6px;">
-                A Moment of Encouragement from the Love Pastor
-              </div>
+      <!-- Heading -->
+      <div style="font-family:Georgia,serif;font-size:16px;color:#2a2a2a;font-weight:bold;margin:0 0 6px;">
+        A Moment of Encouragement from the Love Pastor
+      </div>
 
-              <div style="max-width:520px;margin:0 auto;
-                          font-family:Arial,Helvetica,sans-serif;
-                          font-size:14px;color:#4a4a4a;line-height:1.6;">
-                Take two minutes to be encouraged. A short word on living out Christ’s love.
-              </div>
+      <!-- Subcopy -->
+      <div style="max-width:520px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;">
+        Take two minutes to be encouraged. A short word on living out Christ’s love.
+      </div>
 
-              <!-- Spacer -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr><td height="12" style="font-size:0;line-height:0;">&nbsp;</td></tr>
-              </table>
+<!-- Love Pastor – Autoplay with Click-to-Toggle Sound -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+  <tr>
+    <td align="center" style="padding:12px 0;">
 
-              <!-- Video Container -->
-              <table role="presentation" width="390" cellpadding="0" cellspacing="0" border="0"
-                     style="max-width:390px;width:100%;border-collapse:collapse;margin:0 auto;">
-                <tr>
-                  <td style="padding:0;">
+      <table role="presentation" width="390" cellpadding="0" cellspacing="0" border="0"
+             style="max-width:390px;width:100%;border-collapse:collapse;">
+        <tr>
+          <td style="padding:0;">
 
-                    <div style="position:relative;width:100%;padding-top:177.78%;
-                                overflow:hidden;border-radius:6px;">
+            <div style="position:relative;width:100%;padding-top:177.78%;overflow:hidden;border-radius:6px;">
 
-                      <!-- YouTube iframe (Apple Mail compatible) -->
-                      <iframe
-                        src="https://www.youtube.com/embed/k_O3vftgMRs?autoplay=1&mute=1&playsinline=1&loop=1&playlist=k_O3vftgMRs&controls=0&modestbranding=1&rel=0"
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-                        allow="autoplay; encrypted-media"
-                        allowfullscreen>
-                      </iframe>
+              <!-- YouTube iframe -->
+              <iframe
+                id="lovePastorVideo"
+                src="https://youtube.com/shorts/2mBqtL0nrHQ?feature=share"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
 
-                      <!-- Overlay label (non-interactive fallback) -->
-                      <div style="position:absolute;bottom:14px;left:50%;
-                                  transform:translateX(-50%);
-                                  background:rgba(0,0,0,0.7);
-                                  color:#ffffff;
-                                  border-radius:20px;
-                                  padding:8px 16px;
-                                  font-family:Arial,Helvetica,sans-serif;
-                                  font-size:13px;">
-                        🔇 Sound off
-                      </div>
+              <!-- Toggle sound button -->
+              <button
+                id="toggleSoundBtn"
+                onclick="toggleLovePastorSound()"
+                style="
+                  position:absolute;
+                  bottom:14px;
+                  left:50%;
+                  transform:translateX(-50%);
+                  background:rgba(0,0,0,0.7);
+                  color:#ffffff;
+                  border:0;
+                  border-radius:20px;
+                  padding:8px 16px;
+                  font-family:Arial,Helvetica,sans-serif;
+                  font-size:13px;
+                  cursor:pointer;
+                ">
+                🔇 Sound off
+              </button>
 
-                    </div>
+            </div>
 
-                  </td>
-                </tr>
-              </table>
+          </td>
+        </tr>
+      </table>
 
-            </td>
-          </tr>
-        </table>
+    </td>
+  </tr>
+</table>
+
+<script>
+  let isMuted = true;
+
+  function toggleLovePastorSound() {
+    const iframe = document.getElementById('lovePastorVideo');
+    const button = document.getElementById('toggleSoundBtn');
+
+    if (isMuted) {
+      iframe.contentWindow.postMessage(
+        '{"event":"command","func":"unMute","args":""}',
+        '*'
+      );
+      button.textContent = '🔊 Sound on';
+    } else {
+      iframe.contentWindow.postMessage(
+        '{"event":"command","func":"mute","args":""}',
+        '*'
+      );
+      button.textContent = '🔇 Sound off';
+    }
+
+    isMuted = !isMuted;
+  }
+</script>
 
         <!-- Spacer between sections -->
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
