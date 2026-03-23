@@ -1172,6 +1172,119 @@
 
 
 <!-- FEATURED: Kingdom Business Spotlight -->
+<style>
+  .kbs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .kbs-card-wrap {
+    perspective: 900px;
+    height: 215px;
+    cursor: pointer;
+  }
+  .kbs-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .kbs-card-wrap:hover .kbs-card-inner {
+    transform: rotateY(180deg);
+  }
+  .kbs-card-front,
+  .kbs-card-back {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 10px;
+    text-align: center;
+  }
+  .kbs-card-front {
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+  }
+  .kbs-front-logo {
+    max-width: 100px;
+    max-height: 48px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 8px auto;
+  }
+  .kbs-front-name {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2a2a2a;
+    line-height: 1.4;
+    margin: 0 0 4px 0;
+  }
+  .kbs-front-tagline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #999999;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+  }
+  .kbs-front-hint {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #d32f2f;
+    letter-spacing: 0.5px;
+  }
+  .kbs-card-back {
+    background: #2a2a2a;
+    border: 1px solid #d32f2f;
+    transform: rotateY(180deg);
+  }
+  .kbs-back-name {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+    line-height: 1.3;
+  }
+  .kbs-back-desc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+  }
+  .kbs-back-btn {
+    display: inline-block;
+    border: 1px solid #d32f2f;
+    border-radius: 4px;
+    color: #ff6b6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 5px 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .kbs-back-btn:hover {
+    background: #d32f2f;
+    color: #ffffff;
+  }
+</style>
+
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;background:#ffffff;">
   <tr>
     <td style="padding:14px 14px 16px 12px;background:#ffffff;">
@@ -1190,101 +1303,80 @@
         </tr>
       </table>
 
-      <!-- Section Label -->
+      <!-- Eyebrow -->
       <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#999999;text-align:center;letter-spacing:2px;text-transform:uppercase;margin:0 0 6px 0;">
         Kingdom Business Spotlight
       </div>
 
       <!-- Title -->
-      <div style="font-family:Georgia,serif;font-size:16px;color:#2a2a2a;font-weight:bold;text-align:center;margin:0 0 4px 0;">
+      <div style="font-family:Georgia,serif;font-size:20px;color:#2a2a2a;font-weight:bold;text-align:center;margin:0 0 4px 0;">
         Partners in Faith &amp; Business
       </div>
 
       <!-- Subtitle -->
-      <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#777777;text-align:center;margin:0 0 16px 0;line-height:1.6;">
-        Businesses we trust, recommend, and are proud to stand beside.
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#777777;text-align:center;line-height:1.6;margin:0 0 20px 0;">
+        Businesses we trust, recommend, and are proud to stand beside. Hover over each card to learn more.
       </div>
 
-      <!-- 3-Column Card Grid -->
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:560px;margin:0 auto;border-collapse:collapse;">
-        <tr>
+      <!-- Flip Card Grid -->
+      <div class="kbs-grid">
 
-          <!-- Card 1: Hershenberg Group -->
-          <td class="stack" width="33.33%" valign="top" style="padding:6px 8px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e6e6e6;border-radius:6px;">
-              <tr>
-                <td style="padding:14px 10px;text-align:center;">
-                  <!-- Replace with hosted logo URL -->
-                  <img src="https://mcusercontent.com/4c57091bf25d401d85fe2b8ef/images/02986908-1051-95f4-9558-597f536cc534.png" alt="Hershenberg Group" width="100" style="display:block;width:100%;max-width:100px;height:auto;border:0;margin:0 auto 8px auto;" onerror="this.style.display='none'">
-                  <div style="font-family:Georgia,serif;font-size:14px;color:#2a2a2a;font-weight:bold;margin:0 0 4px 0;">
-                    Hershenberg Group
-                  </div>
-                  <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#999999;letter-spacing:1px;text-transform:uppercase;margin:0 0 8px 0;">
-                    Luxury Real Estate
-                  </div>
-                  <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#4a4a4a;line-height:1.6;margin:0 0 10px 0;text-align:left;">
-                    Texas's largest Real Broker Luxury team with 25 members across DFW, specializing in luxury residential, commercial, and land development.
-                  </div>
-                  <a href="https://www.hershenberggroup.com/" target="_blank" style="background:#ffffff;border:1px solid #d32f2f;border-radius:4px;color:#d32f2f;display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:30px;text-align:center;text-decoration:none;width:100%;letter-spacing:.5px;">
-                    VISIT WEBSITE
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </td>
+        <!-- Card 1: Hershenberg Group -->
+        <div class="kbs-card-wrap">
+          <div class="kbs-card-inner">
+            <div class="kbs-card-front">
+              <img src="YOUR_HERSHENBERG_LOGO_URL" alt="Hershenberg Group" class="kbs-front-logo" onerror="this.style.display='none'">
+              <div class="kbs-front-name">Hershenberg<br>Group</div>
+              <div class="kbs-front-tagline">Luxury Real Estate</div>
+              <div class="kbs-front-hint">Hover to learn more</div>
+            </div>
+            <div class="kbs-card-back">
+              <div class="kbs-back-name">Hershenberg Group</div>
+              <div class="kbs-back-desc">Texas's largest Real Broker Luxury team with 25 members across DFW. Specializing in luxury residential, commercial, and land development.</div>
+              <a href="https://www.hershenberggroup.com/" target="_blank" class="kbs-back-btn">Visit Website</a>
+            </div>
+          </div>
+        </div>
 
-          <!-- Card 2: Thornhill Catering -->
-          <td class="stack" width="33.33%" valign="top" style="padding:6px 8px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e6e6e6;border-radius:6px;">
-              <tr>
-                <td style="padding:14px 10px;text-align:center;">
-                  <img src="https://mcusercontent.com/4c57091bf25d401d85fe2b8ef/images/a8a7056e-ae2a-23ce-a678-2f3ddf2416d6.png" alt="Thornhill Catering" width="100" style="display:block;width:100%;max-width:100px;height:auto;border:0;margin:0 auto 8px auto;">
-                  <div style="font-family:Georgia,serif;font-size:14px;color:#2a2a2a;font-weight:bold;margin:0 0 4px 0;">
-                    Thornhill Catering
-                  </div>
-                  <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#999999;letter-spacing:1px;text-transform:uppercase;margin:0 0 8px 0;">
-                    Full-Service Catering
-                  </div>
-                  <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#4a4a4a;line-height:1.6;margin:0 0 10px 0;text-align:left;">
-                    Serving Dallas for 30+ years with flexible, affordable full-service catering for any occasion — from office lunches to elegant galas.
-                  </div>
-                  <a href="https://www.thornhillcatering.com/" target="_blank" style="background:#ffffff;border:1px solid #d32f2f;border-radius:4px;color:#d32f2f;display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:30px;text-align:center;text-decoration:none;width:100%;letter-spacing:.5px;">
-                    VISIT WEBSITE
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </td>
+        <!-- Card 2: Thornhill Catering -->
+        <div class="kbs-card-wrap">
+          <div class="kbs-card-inner">
+            <div class="kbs-card-front">
+              <img src="https://mcusercontent.com/4c57091bf25d401d85fe2b8ef/images/a8a7056e-ae2a-23ce-a678-2f3ddf2416d6.png" alt="Thornhill Catering" class="kbs-front-logo">
+              <div class="kbs-front-name">Thornhill<br>Catering</div>
+              <div class="kbs-front-tagline">Full-Service Catering</div>
+              <div class="kbs-front-hint">Hover to learn more</div>
+            </div>
+            <div class="kbs-card-back">
+              <div class="kbs-back-name">Thornhill Catering</div>
+              <div class="kbs-back-desc">Serving Dallas for 30+ years with flexible, affordable full-service catering for any occasion — from office lunches to elegant galas.</div>
+              <a href="https://www.thornhillcatering.com/" target="_blank" class="kbs-back-btn">Visit Website</a>
+            </div>
+          </div>
+        </div>
 
-          <!-- Card 3: The Vant Group -->
-          <td class="stack" width="33.33%" valign="top" style="padding:6px 8px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e6e6e6;border-radius:6px;">
-              <tr>
-                <td style="padding:14px 10px;text-align:center;">
-                  <!-- Replace with hosted Vant Group logo URL -->
-                  <img src="https://mcusercontent.com/4c57091bf25d401d85fe2b8ef/images/23da03a5-6076-d5d6-5f0e-3eec87513569.png" alt="The Vant Group" width="100" style="display:block;width:100%;max-width:100px;height:auto;border:0;margin:0 auto 8px auto;" onerror="this.style.display='none'">
-                  <div style="font-family:Georgia,serif;font-size:14px;color:#2a2a2a;font-weight:bold;margin:0 0 4px 0;">
-                    The Vant Group
-                  </div>
-                  <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#999999;letter-spacing:1px;text-transform:uppercase;margin:0 0 8px 0;">
-                    M&amp;A Advisory
-                  </div>
-                  <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#4a4a4a;line-height:1.6;margin:0 0 10px 0;text-align:left;">
-                    A nationally recognized M&amp;A advisory firm with 26+ years of experience helping businesses with revenues up to $250M expand or exit with confidence.
-                  </div>
-                  <a href="https://www.thevantgroup.com/" target="_blank" style="background:#ffffff;border:1px solid #d32f2f;border-radius:4px;color:#d32f2f;display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:30px;text-align:center;text-decoration:none;width:100%;letter-spacing:.5px;">
-                    VISIT WEBSITE
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </td>
+        <!-- Card 3: The Vant Group -->
+        <div class="kbs-card-wrap">
+          <div class="kbs-card-inner">
+            <div class="kbs-card-front">
+              <img src="YOUR_VANT_GROUP_LOGO_URL" alt="The Vant Group" class="kbs-front-logo" onerror="this.style.display='none'">
+              <div class="kbs-front-name">The Vant<br>Group</div>
+              <div class="kbs-front-tagline">M&amp;A Advisory</div>
+              <div class="kbs-front-hint">Hover to learn more</div>
+            </div>
+            <div class="kbs-card-back">
+              <div class="kbs-back-name">The Vant Group</div>
+              <div class="kbs-back-desc">A nationally recognized M&amp;A advisory firm with 26+ years of experience helping businesses with revenues up to $250M expand or exit.</div>
+              <a href="https://www.thevantgroup.com/" target="_blank" class="kbs-back-btn">Visit Website</a>
+            </div>
+          </div>
+        </div>
 
-        </tr>
-      </table>
+      </div>
+      <!-- /kbs-grid -->
 
       <!-- Footer Note -->
-      <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#aaaaaa;text-align:center;margin:14px 0 0 0;letter-spacing:0.5px;">
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#aaaaaa;text-align:center;margin:16px 0 0 0;letter-spacing:0.5px;">
         Businesses that put faith at the center of everything they do.
       </div>
 
