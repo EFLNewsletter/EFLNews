@@ -421,6 +421,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     max-width: 360px;
+    margin: 0 auto 16px auto;
+  }
+  .kbs-grid-row3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 174px;
     margin: 0 auto;
   }
   .kbs-card-wrap {
@@ -655,25 +662,31 @@
           </div>
         </div>
 
-<!-- Card 6: Preston Trail Sports & Family Chiropractic -->
-<div class="kbs-card-wrap">
-  <div class="kbs-card-inner">
-    <div class="kbs-card-front">
-      <img src="YOUR_PRESTON_TRAIL_LOGO_URL" alt="Preston Trail Sports & Family Chiropractic" class="kbs-front-logo" onerror="this.style.display='none'">
-      <div class="kbs-front-name">Preston Trail<br>Chiropractic</div>
-      <div class="kbs-front-tagline">Sports &amp; Family Care</div>
-      <div class="kbs-front-hint">Hover to learn more</div>
-    </div>
-    <div class="kbs-card-back">
-      <div class="kbs-back-name">Preston Trail Sports &amp; Family Chiropractic</div>
-      <div class="kbs-back-desc">Focused on removing the root cause of conditions, balancing the body's biochemistry, and restoring posture — so families can live healthier, happier, and more productive lives.</div>
-      <a href="YOUR_PRESTON_TRAIL_WEBSITE_URL" target="_blank" class="kbs-back-btn">Visit Website</a>
-    </div>
-  </div>
-</div>
-
       </div>
       <!-- /Row 2 -->
+
+      <!-- Row 3: 1 card centered -->
+      <div class="kbs-grid-row3">
+
+        <!-- Card 6: Preston Trail Sports & Family Chiropractic -->
+        <div class="kbs-card-wrap">
+          <div class="kbs-card-inner">
+            <div class="kbs-card-front">
+              <img src="YOUR_PRESTON_TRAIL_LOGO_URL" alt="Preston Trail Sports & Family Chiropractic" class="kbs-front-logo" onerror="this.style.display='none'">
+              <div class="kbs-front-name">Preston Trail<br>Chiropractic</div>
+              <div class="kbs-front-tagline">Sports &amp; Family Care</div>
+              <div class="kbs-front-hint">Hover to learn more</div>
+            </div>
+            <div class="kbs-card-back">
+              <div class="kbs-back-name">Preston Trail Sports &amp; Family Chiropractic</div>
+              <div class="kbs-back-desc">Focused on removing the root cause of conditions, balancing the body's biochemistry, and restoring posture — so families can live healthier, happier, and more productive lives.</div>
+              <a href="YOUR_PRESTON_TRAIL_WEBSITE_URL" target="_blank" class="kbs-back-btn">Visit Website</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /Row 3 -->
 
       <!-- Footer Note -->
       <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#aaaaaa;text-align:center;margin:16px 0 0 0;letter-spacing:0.5px;">
