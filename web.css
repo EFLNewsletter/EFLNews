@@ -114,7 +114,8 @@
   </tr>
 </table>
 
-<!--SKY RANCH RETREAT SECTION -->
+
+<!-- SKY RANCH RETREAT SECTION -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;background:#ffffff;">
   <tr>
     <td style="padding:14px 14px 0px 12px;background:#ffffff;">
@@ -183,8 +184,7 @@
     </td>
   </tr>
 </table>
-<!-- END SKY RANCH RETREAT SECTION -->
-
+<!-- END LONE OAK RANCH RETREAT SECTION -->
 <!-- PRAYER TITLE + SECTION -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;background:#ffffff;">
   <tr>
@@ -364,6 +364,7 @@
     </td>
   </tr>
 </table>
+
 <!-- NEVER GIVE UP STORY -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;background:#ffffff;">
   <tr>
@@ -433,7 +434,6 @@
     </td>
   </tr>
 </table>
-
 
 
 <!-- FEATURED: Prophecy -->
@@ -665,12 +665,21 @@
           </td>
         </tr>
         <tr>
-          <td colspan="2" style="padding:6px 8px;">
-            <table role="presentation" width="50%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;border:1px solid #e6e6e6;">
+          <td class="stack" width="50%" valign="top" style="padding:6px 8px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;border:1px solid #e6e6e6;">
               <tr><td style="padding:10px;text-align:left;">
                 <div style="font-family:Georgia,serif;font-size:15px;color:#2a2a2a;font-weight:bold;margin:0 0 4px;">Asher Hogan</div>
                 <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#777;margin:0 0 6px;">Invited By <strong>Peter Hogan</strong></div>
                 <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#4a4a4a;margin:0;">Joined 06/20 at Saturday Study</div>
+              </td></tr>
+            </table>
+          </td>
+          <td class="stack" width="50%" valign="top" style="padding:6px 8px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;border:1px solid #e6e6e6;">
+              <tr><td style="padding:10px;text-align:left;">
+                <div style="font-family:Georgia,serif;font-size:15px;color:#2a2a2a;font-weight:bold;margin:0 0 4px;">Michael West</div>
+                <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#777;margin:0 0 6px;"> <strong></strong></div>
+                <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#4a4a4a;margin:0;">Joined 06/27 at Saturday Study</div>
               </td></tr>
             </table>
           </td>
@@ -679,6 +688,7 @@
     </td>
   </tr>
 </table>
+
 <!-- FEATURED: Kingdom Business Spotlight -->
 <style>
   .kbs-grid {
@@ -1049,7 +1059,6 @@
     </td>
   </tr>
 </table>
-
 <!-- BIBLE STUDIES & TEACHERS -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:12px 0;">
   <tr>
@@ -1061,7 +1070,7 @@
           <td class="stack" width="50%" valign="top" style="padding:6px 8px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e6e6e6;">
               <tr><td style="padding:10px;text-align:left;">
-                <div style="font-family:Georgia,serif;font-size:15px;color:#2a2a2a;font-weight:bold;margin:0 0 4px;">Brandon Ricks</div>
+                <div style="font-family:Georgia,serif;font-size:15px;color:#2a2a2a;font-weight:bold;margin:0 0 4px;">Stan McNeil</div>
                 <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#4a4a4a;margin:0 0 6px;"><em>Acts 25</em></div>
                 <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#777;margin:0;">Tuesday, 6:00 PM – 9:00 PM<br>7029 Fullerton Dr., Plano</div>
               </td></tr>
@@ -1070,8 +1079,8 @@
           <td class="stack" width="50%" valign="top" style="padding:6px 8px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e6e6e6;">
               <tr><td style="padding:10px;text-align:left;">
-                <div style="font-family:Georgia,serif;font-size:15px;color:#2a2a2a;font-weight:bold;margin:0 0 4px;">Chris Tyler</div>
-                <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#4a4a4a;margin:0 0 6px;"><em>Acts 25</em></div>
+                <div style="font-family:Georgia,serif;font-size:15px;color:#2a2a2a;font-weight:bold;margin:0 0 4px;">John Hershenberg</div>
+                <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#4a4a4a;margin:0 0 6px;"><em>Acts 26</em></div>
                 <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#777;margin:0;">Wednesday, 12:00 PM – 1:30 PM<br>17766 Preston Rd, Dallas</div>
               </td></tr>
             </table>
@@ -1081,7 +1090,7 @@
           <td class="stack" width="50%" valign="top" style="padding:6px 8px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e6e6e6;">
               <tr><td style="padding:10px;text-align:left;">
-                <div style="font-family:Georgia,serif;font-size:15px;color:#2a2a2a;font-weight:bold;margin:0 0 4px;">John Hershenberg</div>
+                <div style="font-family:Georgia,serif;font-size:15px;color:#2a2a2a;font-weight:bold;margin:0 0 4px;">Stan McNeil</div>
                 <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#4a4a4a;margin:0 0 6px;"><em>Acts 26</em></div>
                 <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#777;margin:0;">Friday, 12:00 PM – 1:30 PM<br>17766 Preston Rd, Dallas</div>
               </td></tr>
@@ -1090,8 +1099,8 @@
           <td class="stack" width="50%" valign="top" style="padding:6px 8px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e6e6e6;">
               <tr><td style="padding:10px;text-align:left;">
-                <div style="font-family:Georgia,serif;font-size:15px;color:#2a2a2a;font-weight:bold;margin:0 0 4px;">John Hershenberg</div>
-                <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#4a4a4a;margin:0 0 6px;"><em>Acts 26</em></div>
+                <div style="font-family:Georgia,serif;font-size:15px;color:#2a2a2a;font-weight:bold;margin:0 0 4px;">Stan McNeil</div>
+                <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#4a4a4a;margin:0 0 6px;"><em>Acts 27</em></div>
                 <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#777;margin:0;">Saturday, 9:00 AM – 11:00 AM<br>17766 Preston Rd, Dallas</div>
               </td></tr>
             </table>
